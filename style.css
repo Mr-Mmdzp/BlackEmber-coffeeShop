@@ -1,0 +1,20 @@
+@font-face {
+    font-family:outfit;
+    src: url(./Assists/fonts/Outfit-VariableFont_wght.ttf) format("truetype");
+}
+@font-face {
+    font-family:nunito;
+    src: url(./Assists/fonts/NunitoSans-VariableFont_YTLC\,opsz\,wdth\,wght.ttf) format("truetype");
+}
+@font-face {
+    font-family:vazir;
+    src: url(./Assists/fonts/Vazir.ttf) format("truetype");
+}
+
+body {
+    font-family: outfit;
+}
+
+html[dir="rtl"] body {
+    font-family: vazir;
+}

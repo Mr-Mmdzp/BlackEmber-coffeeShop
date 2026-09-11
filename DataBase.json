@@ -1,0 +1,302 @@
+{
+  "header": {
+    "logo": "./Assists/images/logo-image.png",
+    "cart": {
+      "icon": "./Assists/images/shopping-cart-icon.svg"
+    }
+  },
+  "heroImage" : "./Assists/images/hero-image.jpg",
+  "svgs": {
+    "searchSvg": "./Assists/images/search-svg.svg",
+    "shoppingSvg": "./Assists/images/shopping-cart-icon.svg"
+  },
+
+  "topSellerProducts": [
+    {
+      "id": 1,
+      "name": {
+        "english": "Coffee",
+        "persian": "قهوه"
+      },
+      "image": "./Assists/images/msi-1.jpg",
+      "category": "coffee",
+      "price": 4.5,
+      "bestSeller": true,
+      "description": {
+        "english": "Made with steamed, frothy milk, blended with rich, freshly ground and brewed espresso",
+        "persian": "تهیه‌شده با شیر بخارپز و کف‌دار، ترکیب‌شده با اسپرسوی غنی و تازه آسیاب‌شده"
+      }
+    },
+
+    {
+      "id": 2,
+      "name": {
+        "english": "Hot Chocolate",
+        "persian": "شکلات داغ"
+      },
+      "image": "./Assists/images/msi-2.jpg",
+      "category": "hot drink",
+      "price": 5,
+      "bestSeller": true,
+      "description": {
+        "english": "Full and aromatic chocolate flavor",
+        "persian": "طعم کامل و عطر دلنشین شکلات"
+      }
+    },
+
+    {
+      "id": 3,
+      "name": {
+        "english": "Honey Cake",
+        "persian": "کیک عسل"
+      },
+      "image": "./Assists/images/msi-3.jpg",
+      "category": "dessert",
+      "price": 5.5,
+      "bestSeller": true,
+      "description": {
+        "english": "Dessert with honey prepared using traditional methods",
+        "persian": "دسر عسلی تهیه‌شده با روش‌های سنتی"
+      }
+    },
+
+    {
+      "id": 4,
+      "name": {
+        "english": "Cappuccino",
+        "persian": "کاپوچینو"
+      },
+      "image": "./Assists/images/msi-4.jpg",
+      "category": "cappuccino",
+      "price": 5.5,
+      "bestSeller": true,
+      "description": {
+        "english": "A freshly pulled shot of espresso layered with steamed whole milk",
+        "persian": "یک شات اسپرسوی تازه با لایه‌ای از شیر کامل بخارپز"
+      }
+    },
+
+    {
+      "id": 5,
+      "name": {
+        "english": "Americano",
+        "persian": "آمریکانو"
+      },
+      "image": "./Assists/images/msi-5.jpg",
+      "category": "coffee",
+      "price": 4,
+      "bestSeller": true,
+      "description": {
+        "english": "Freshly pulled shots of espresso combined with hot water",
+        "persian": "شات‌های تازه اسپرسو ترکیب‌شده با آب داغ"
+      }
+    },
+
+    {
+      "id": 6,
+      "name": {
+        "english": "Orange Cake",
+        "persian": "کیک پرتقالی"
+      },
+      "image": "./Assists/images/msi-6.jpg",
+      "category": "dessert",
+      "price": 6,
+      "bestSeller": true,
+      "description": {
+        "english": "Rich and caramelized Basque-style cheesecake",
+        "persian": "چیزکیک غنی و کاراملی به سبک باسکی"
+      }
+    },
+
+    {
+      "id": 7,
+      "name": {
+        "english": "Mocha",
+        "persian": "موکا"
+      },
+      "image": "./Assists/images/msi-7.jpg",
+      "category": "coffee",
+      "price": 4.5,
+      "bestSeller": true,
+      "description": {
+        "english": "Premium dark chocolate drink with rich taste and texture, made with milk, coffee and chocolate",
+        "persian": "نوشیدنی شکلاتی تلخ و پریمیوم با طعم و بافت غنی، تهیه‌شده با شیر، قهوه و شکلات"
+      }
+    },
+
+    {
+      "id": 8,
+      "name": {
+        "english": "Cacao",
+        "persian": "کاکائو"
+      },
+      "image": "./Assists/images/msi-8.jpg",
+      "category": "drink",
+      "price": 5,
+      "bestSeller": true,
+      "description": {
+        "english": "A children's favorite - velvety cocoa bliss in one sip",
+        "persian": "محبوب کودکان؛ لذت لطیف و خامه‌ای کاکائو در هر جرعه"
+      }
+    }
+  ],
+  "banner" : {
+    "image" : "./Assists/images/banner-image.png"
+  },
+
+  "categoriesScrollMat": [
+  {
+    "id": 1,
+    "image": "./Assists/images/category_cafe.png",
+    "title": {
+      "english": "Hot Drinks",
+      "persian": "نوشیدنی‌های گرم"
+    },
+    "category": "coffee"
+  },
+  {
+    "id": 2,
+    "image": "./Assists/images/category_dessert.png",
+    "title": {
+      "english": "Dessert",
+      "persian": "دسر"
+    },
+    "category": "dessert"
+  },
+  {
+    "id": 3,
+    "image": "./Assists/images/category_cafe.png",
+    "title": {
+      "english": "Hot Drinks",
+      "persian": "نوشیدنی‌های گرم"
+    },
+    "category": "coffee"
+  },
+  {
+    "id": 4,
+    "image": "./Assists/images/category_dessert.png",
+    "title": {
+      "english": "Dessert",
+      "persian": "دسر"
+    },
+    "category": "dessert"
+  },
+  {
+    "id": 5,
+    "image": "./Assists/images/category_cafe.png",
+    "title": {
+      "english": "Hot Drinks",
+      "persian": "نوشیدنی‌های گرم"
+    },
+    "category": "coffee"
+  },
+  {
+    "id": 6,
+    "image": "./Assists/images/category_dessert.png",
+    "title": {
+      "english": "Dessert",
+      "persian": "دسر"
+    },
+    "category": "dessert"
+  },
+  {
+    "id": 7,
+    "image": "./Assists/images/category_cafe.png",
+    "title": {
+      "english": "Hot Drinks",
+      "persian": "نوشیدنی‌های گرم"
+    },
+    "category": "coffee"
+  },
+  {
+    "id": 8,
+    "image": "./Assists/images/category_dessert.png",
+    "title": {
+      "english": "Dessert",
+      "persian": "دسر"
+    },
+    "category": "dessert"
+  },
+  {
+    "id": 9,
+    "image": "./Assists/images/category_cafe.png",
+    "title": {
+      "english": "Hot Drinks",
+      "persian": "نوشیدنی‌های گرم"
+    },
+    "category": "coffee"
+  },
+  {
+    "id": 10,
+    "image": "./Assists/images/category_dessert.png",
+    "title": {
+      "english": "Dessert",
+      "persian": "دسر"
+    },
+    "category": "dessert"
+  }
+],
+"signatureItems" : [
+  {
+    "id":1,
+    "image" : "./Assists/images/signature1.jpg",
+    "name":{
+      "english" : "Bubble Gum Shake",
+      "persian" : "شِیک آدامس باد‌کنکی"
+    }
+  },
+  {
+    "id":2,
+    "image" : "./Assists/images/signature3.jpg",
+    "name" : {
+      "english" : "Vanille Moca",
+      "persian" : "موکا وانیلی"
+    }
+  },
+  {
+    "id":3,
+    "image" : "./Assists/images/signature4.jpg",
+    "name": {
+      "english" : "Cherry Moca",
+      "persian" : "موکا گیلاسی"
+    }
+  }
+],
+"bannerSec" : "Assists/images/banner-sec.png",
+"reviews": [
+  {
+    "name": {
+      "english" : "Alex Morgan",
+      "persian" : "مهدی زنجیریان"
+    },
+    "rating": 5,
+    "comment": {
+      "english": "The coffee was amazing and the atmosphere was even better. Definitely coming back.",
+      "persian": "قهوه فوق‌العاده بود و فضای کافه حتی بهتر. قطعاً دوباره برمی‌گردم."
+    }
+  },
+  {
+    "name": {
+      "english" : "Sophia Carter",
+      "persian" : "خداداد عزیزی"
+    },
+    "rating": 5,
+    "comment": {
+      "english": "A beautiful place with great coffee and a warm atmosphere. Loved every moment.",
+      "persian": "جای بسیار زیبایی با قهوه عالی و فضای گرم و دلنشین. از تک‌تک لحظات لذت بردم."
+    }
+  },
+  {
+    "name": {
+      "english" : "Daniel Brooks",
+      "persian" : "جواد خیابانی"
+    },
+    "rating": 4,
+    "comment": {
+      "english": "The espresso was rich and perfectly balanced. The whole experience felt special.",
+      "persian": "اسپرسو غنی و کاملاً متعادل بود. کل تجربه حس خاصی داشت."
+    }
+  }
+],
+"finalBanner" : "Assists/images/last-banner.png"
+}

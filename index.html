@@ -1,0 +1,588 @@
+<!doctype html>
+<html lang="en-UK">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Black Ember</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="./Assists/images/favicon.jpg" />
+  </head>
+  <body class="text-white bg-black/90 mx-50">
+    <div
+      class="products-popup hidden fixed inset-0 z-50 flex items-center justify-center backdrop-blur-md bg-black/20"
+    ></div>
+
+    <header
+      class="relative z-50 bg-[#c9bda9] backdrop-blur-xl rounded-2xl my-2 text-[#171412]"
+    >
+      <div
+        class="first-floor flex justify-between items-center border-b border-[#9a4f2f]/40"
+      >
+        <img src="" alt="logo" class="logo-area w-60 m-6" />
+
+        <nav class="flex justify-between items-center mx-25 gap-15">
+          <a
+            class="dynamic-text relative after:bottom-0 after:content-[''] after:absolute after:left-[0] overflow-hidden after:w-full after:h-[2px] after:bg-[#8B451F] hover:after:left-0 after:transition-all after:duration-[350ms] after:ease-in-out"
+            data-persian="خانه"
+            data-english="Home"
+            href="#"
+            >Home</a
+          >
+          <a
+            class="dynamic-text relative after:bottom-0 after:content-[''] after:absolute after:-left-[75%] overflow-hidden after:w-full after:h-[2px] after:bg-[#8B451F] hover:after:left-0 after:transition-all after:duration-[350ms] after:ease-in-out"
+            data-persian="درباره ما"
+            data-english="About"
+            href="#"
+            id="about-btn"
+            >About</a
+          >
+          <a
+            class="dynamic-text relative after:bottom-0 after:content-[''] after:absolute after:-left-[75%] overflow-hidden after:w-full after:h-[2px] after:bg-[#8B451F] hover:after:left-0 after:transition-all after:duration-[350ms] after:ease-in-out"
+            data-persian="منو"
+            data-english="Menu"
+            href="#"
+            >Menu</a
+          >
+          <a
+            class="dynamic-text relative after:bottom-0 after:content-[''] after:absolute after:-left-[75%] overflow-hidden after:w-full after:h-[2px] after:bg-[#8B451F] hover:after:left-0 after:transition-all after:duration-[350ms] after:ease-in-out"
+            data-persian="ارتباط با ما"
+            data-english="Contact"
+            href="#"
+            id="contact-btn"
+            >Contact</a
+          >
+        </nav>
+      </div>
+      <div class="second-floor flex justify-between items-center">
+        <div class="input-container relative w-[50%]">
+          <input
+            type="text"
+            placeholder="Search blackEmber..."
+            data-english="Search blackEmber..."
+            data-persian="دنبال چی میگردید؟ سرچ کنید..."
+            class="dynamic-text special search-input w-full h-11 px-4 pr-11 rounded-xl bg-[#e5dccd]/70 border border-[#8B451F]/30 text-[#171412] placeholder:text-[#171412]/50 outline-none transition-all duration-300 focus:border-[#8B451F] focus:ring-2 focus:ring-[#8B451F]/20 focus:bg-[#eee6da] mx-3 my-5 cursor-default"
+          />
+          <img
+            src=""
+            alt="svg"
+            class="search-input-btn absolute right-3 top-1/2 -translate-y-1/2 w-5 h-5 cursor-pointer"
+          />
+        <div class="hidden result-container absolute top-full left-3 right-0 mt-2
+         bg-[#171412]/95 backdrop-blur-xl
+         border border-[#C49A44]/25
+         rounded-2xl
+         shadow-2xl shadow-black/40
+         overflow-hidden
+         z-50
+         max-h-[300px]
+         overflow-y-auto
+         empty:hidden
+         [&::-webkit-scrollbar]:w-1.5
+       [&::-webkit-scrollbar-track]:bg-transparent
+       [&::-webkit-scrollbar-thumb]:bg-[#C49A44]
+       [&::-webkit-scrollbar-thumb]:rounded-full
+       [&::-webkit-scrollbar-thumb:hover]:bg-[#D6B15C]"></div>
+
+        </div>
+        <div class="relative z-50"></div>
+
+    <button
+        class="change-lang-btn
+               flex items-center gap-2
+               cursor-pointer
+               transition-all duration-300
+               hover:text-[#C49A44]"
+    >
+        Language
+        <span>▾</span>
+    </button>
+
+    <div
+        class="lang-menu
+               absolute top-full right-0
+               w-[220px]
+               mt-3
+               opacity-0
+               pointer-events-none
+               transition-opacity duration-200"
+    >
+        <ul
+            class="m-0 p-2
+                   bg-[#120F0D]/95
+                   backdrop-blur-xl
+                   border border-[#C49A44]/30
+                   rounded-2xl
+                   shadow-2xl shadow-black/50"
+        >
+
+            <li
+                class="lang-change-btn lang-change-en
+                       flex items-center
+                       h-[50px]
+                       px-5
+                       rounded-xl
+                       text-[18px]
+                       text-[#ECE3D6]
+                       cursor-pointer
+                       transition-all duration-300
+                       hover:bg-[#C49A44]/10
+                       hover:text-[#C49A44]"
+            >
+                English
+            </li>
+
+            <li
+                class="lang-change-btn lang-change-fa
+                       flex items-center
+                       h-[50px]
+                       px-5
+                       rounded-xl
+                       text-[18px]
+                       text-[#ECE3D6]
+                       cursor-pointer
+                       transition-all duration-300
+                       hover:bg-[#C49A44]/10
+                       hover:text-[#C49A44]"
+            >
+                persian
+            </li>
+
+        </ul>
+    </div>
+
+</div>
+    </header>
+    <div
+      class="hero-container sticky top-0 z-0 relative rounded-2xl overflow-hidden"
+    >
+      <img
+        src=""
+        alt="image"
+        class="hero-image w-full h-[600px] object-cover"
+      />
+
+      <!-- Overlay -->
+      <div class="absolute inset-0 bg-black/35 backdrop-blur-[5px]"></div>
+
+      <!-- Content -->
+      <div class="absolute top-0 left-0 z-0 p-5 somthing">
+        <p
+          data-persian="بلک اِمبر"
+          data-english="Black Ember"
+          class="dynamic-text special-text text-[#C49A44] text-8xl"
+        >
+          Black Ember
+        </p>
+
+        <p
+          data-english=" Where Coffee"
+          data-persian="جایی که قهوه"
+          class="dynamic-text text-4xl text-[#F5F5F5]"
+        >
+          Where Coffee
+        </p>
+
+        <p
+          data-persian="با فضا و حال‌وهوا ملاقات می‌کند."
+          data-english="Meets Atmosphere."
+          class="dynamic-text text-4xl text-[#F5F5F5]"
+        >
+          Meets Atmosphere.
+        </p>
+
+        <p
+          data-persian="با شور و اشتیاق آماده شده."
+          data-english="Crafted With Passion."
+          class="dynamic-text text-4xl text-[#B8B0A5]"
+        >
+          Crafted With Passion.
+        </p>
+
+        <p
+          data-english="Served With Warmth."
+          data-persian="با گرمی و صمیمیت سرو می‌شود."
+          class="dynamic-text text-4xl text-[#B8B0A5]"
+        >
+          Served With Warmth.
+        </p>
+
+        <button
+          class="group relative inline-flex items-center gap-3 cursor-pointer px-7 py-3 my-7 text-lg text-[#C49A44] border border-[#C49A44]/60 rounded-full overflow-hidden transition-all duration-300 hover:text-black hover:border-[#C49A44] hover:-translate-y-1"
+        >
+          <span
+            data-english="Explore More"
+            data-persian="بیشتر کاوش کنید"
+            class="dynamic-text relative z-10"
+          >
+            Explore More
+          </span>
+
+          <span
+            class="relative z-10 transition-transform duration-300 group-hover:translate-x-1"
+          >
+            →
+          </span>
+
+          <span
+            class="absolute inset-0 bg-[#C49A44] translate-y-full transition-transform duration-300 group-hover:translate-y-0"
+          >
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="top-seller-container bg-[#1A1A1A] z-30 pb-20 relative">
+      <strong
+        data-english="Top Sellers Products"
+        data-persian="پر‌فروش ترین‌ آیتم‌ها"
+        class="relative dynamic-text top-seller-title block text-center text-4xl py-10 text-[#ECE3D6] after:content-[''] after:h-[4px] after:bg-[#8B451F]/80 after:w-[30%] after:absolute after:bottom-[50%] after:translate-y-1/2 after:right-0 before:content-[''] before:h-[4px] before:bg-[#8B451F]/80 before:w-[30%] before:absolute before:bottom-[50%] before:translate-y-1/2  before:left-0"
+        >Top Sellers Products</strong
+      >
+      <div
+        class="top-seller-cards product-cards grid grid-cols-4 grid-rows-2 gap-5"
+      ></div>
+    </div>
+
+    <div class="banner-container relative sticky top-0 z-0">
+      <img src="" alt="" class="banner-image" />
+    </div>
+
+    <div class="categories-wrapper relative pt-20 z-20 bg-[#1A1A1A] pb-20">
+      <button
+        class="arrow-right absolute left-[15px] rounded-[50%] bg-white/10 p-3 backdrop-blur-xl w-5 h-5 flex justify-center items-center top-[53%] translate-y-1/2 z-10"
+      >
+        ←
+      </button>
+
+      <div class="categories-viewport overflow-x-hidden py-5 -my-5 px-3">
+        <div
+          class="categories-container flex gap-5 transition-transform duration-500 ease-in-out"
+        ></div>
+      </div>
+
+      <button
+        class="arrow-left absolute right-[15px] rounded-[50%] bg-white/10 p-3 backdrop-blur-xl w-5 h-5 flex justify-center items-center top-[53%] translate-y-1/2 z-10"
+      >
+        →
+      </button>
+    </div>
+
+    <div class="signature-container-all relative z-20 bg-[#1A1A1A] ">
+      <strong class="text-5xl block text-[#ECE3D6] text-center dynamic-text" data-english="BlackEmber's Signature" data-persian="اِمضاء بِلک‌اِمبر :"  >BlackEmber's Signature: </strong>
+      <div class="signature-container grid grid-cols-3 grid-rows-1 gap-15 py-20 "></div>
+    </div>
+
+    <div class="about-wrapper py-20 z-20 relative bg-[#1A1A1A]">
+    <div class="about-container bg-[#1A1A1A] relative z-20 overflow-hidden">
+      <!-- overlay X2 -->
+      <div class="absolute inset-0 w-full h-full backdrop-blur-[4px] z-10 bg-black/50"></div>
+
+      <img src="" alt="" class="about-banner z-0">
+
+      <div class="about-texts absolute z-20 top-0 left-0 somthing2 text-4xl  p-5">
+        <strong class="relative block after:absolute after:content-[''] after:h-[2px] after:w-[100%] after:right-0 after:bg-[#C49A44] after:bottom-0 pb-[2px] dynamic-text " data-english="About" data-persian="درباره ما" id="st-about" >About</strong>
+        <p class="dynamic-text max-w-[500px] break-words leading-19" data-english="More than coffee. An experience worth remembering.
+Black Ember is a place where rich flavors, warm atmosphere, and carefully crafted coffee come together. From the first sip to the last moment, every detail is made to create an experience you'll want to come back to." 
+data-persian="بیشتر از قهوه؛ تجربه‌ای که ارزش به خاطر سپردن دارد.
+بِلک‌اِمبر جایی است که طعم‌های غنی، فضای گرم و قهوه‌های با دقت آماده‌شده در کنار هم قرار می‌گیرند. از اولین جرعه تا آخرین لحظه، هر جزئیات با هدف ساختن تجربه‌ای طراحی شده که دوست دارید دوباره تجربه‌اش کنید." >
+          More than coffee. An experience worth remembering.
+Black Ember is a place where rich flavors, warm atmosphere, and carefully crafted coffee come together. From the first sip to the last moment, every detail is made to create an experience you'll want to come back to.
+        </p>
+      </div>
+    </div>
+    </div>
+
+    <div class="review-container bg-[#1A1A1A] relative z-20 py-20">
+      <strong data-english="BlackEmber's Reviews:" data-persian="نظرات بِلک‌اِمبر:" class="dynamic-text text-center block p-5 text-4xl text-[#ECE3D6]">BlackEmber's Reviews:</strong>
+      <div class="review-cards grid grid-cols-3 grid-rows-1 gap-10"></div>
+    </div>
+<div class="location-wrapper relative z-20 bg-[#1A1A1A] py-20">
+<div class="location-container relative bg-[#221B17] border border-white/10 rounded-2xl  p-10 overflow-hidden
+            max-w-[900px] mx-auto
+            flex flex-col gap-5
+            shadow-xl shadow-black/20
+            hover:border-[#C49A44]/50
+            transition-all duration-500 ease-in-out">
+
+    <strong
+        class="dynamic-text text-4xl font-semibold text-[#ECE3D6]
+               relative inline-block w-fit
+               after:content-[''] after:absolute after:h-[2px]
+               after:w-full after:bg-[#C49A44]
+               after:bottom-[-6px] after:left-0"
+        data-english="Visit BlackEmber"
+        data-persian="به بِلک‌اِمبر سر‌بزنید."
+               >
+        Visit BlackEmber
+    </strong>
+
+    <p
+        class="dynamic-text text-lg text-[#B8AFA3] max-w-[650px] leading-8"
+        data-english="Come by, grab a coffee, and stay for the atmosphere."
+        data-persian="بیاید ، قهوه بنوشید ، و از حال‌و‌هوا لذت ببرید.">
+        Come by, grab a coffee, and stay for the atmosphere.
+    </p>
+
+    <div class="h-px w-full bg-white/10"></div>
+
+    <p
+        class="dynamic-text text-[#D6C8B5] text-lg"
+        data-english="Location: Ember Street"
+        data-persian="مکان: خیابان اِمبر">
+        Location: Ember Street
+    </p>
+
+    <p
+        class="dynamic-text text-[#D6C8B5] text-lg"
+        data-english="Working Time: MON-SUN | 08:00 - 23:00"
+        data-persian="ساعات کاری: شنبه تا چهارشنبه | ساعت 08:00 تا 23:00">
+        Working Time: MON-SUN | 08:00 - 23:00
+    </p>
+
+</div>
+</div>
+
+<div class="cta-wrapper py-20 relative z-20 bg-[#1A1A1A]">
+
+    <div class="final-CTA relative overflow-hidden ">
+
+        <img
+            src=""
+            alt=""
+            class="final-banner z-0 w-full h-full object-cover"
+        >
+
+        <div class="overlay bg-black/50 backdrop-blur-[2px] z-10 absolute inset-0"></div>
+
+        <div class="cta-texts z-10 absolute inset-0 p-10 h-full
+                    flex flex-col items-start justify-center gap-3">
+
+            <strong
+                class="dynamic-text text-4xl text-[#ECE3D6] font-semibold"
+                data-english="Ready For Your Next Coffee?"
+                data-persian="برای قهوه بعدیت آماده‌ای؟">
+                Ready For Your Next Coffee?
+            </strong>
+
+            <p
+                class="dynamic-text text-xl text-[#C9BDA9] max-w-[500px]"
+                data-english="Your seat is waiting at Black Ember."
+                data-persian="صندلی شما در بِلک‌اِمبر منتظر شماست.">
+                Your seat is waiting at Black Ember.
+            </p>
+
+            <button
+                class="dynamic-text mt-5 px-7 py-3
+                       bg-[#C49A44] text-[#171412]
+                       font-semibold rounded-lg
+                       hover:bg-[#D6B15C]
+                       hover:-translate-y-1 cursor-pointer 
+                       transition-all duration-300"
+                data-english="Explore Menu"
+                data-persian="مشاهده منو">
+                Explore Menu
+            </button>
+
+        </div>
+
+    </div>
+
+</div>
+
+  <footer class="relative overflow-hidden bg-[#120F0D] text-[#ECE3D6] border-t border-[#C49A44]/20">
+
+    <!-- Main Footer -->
+    <div class="relative z-10 max-w-[1400px] mx-auto px-10 pt-20 pb-10">
+
+        <!-- Top -->
+        <div class="grid grid-cols-4 gap-10">
+
+            <!-- Brand -->
+            <div class="flex flex-col gap-5">
+                <strong
+                    class="dynamic-text text-4xl tracking-widest"
+                    data-english="BLACK EMBER"
+                    data-persian="بِلک‌اِمبر">
+                    BLACK EMBER
+                </strong>
+
+                <p
+                    class="dynamic-text text-[#9F958A] leading-7 max-w-[300px]"
+                    data-english="More than coffee. An experience worth remembering."
+                    data-persian="بیشتر از قهوه؛ تجربه‌ای که ارزش به خاطر سپردن دارد.">
+                    More than coffee. An experience worth remembering.
+                </p>
+            </div>
+
+
+            <!-- Navigation -->
+            <div class="flex flex-col gap-4">
+
+                <strong
+                    class="dynamic-text text-lg text-[#C49A44] cursor-default"
+                    data-english="Explore"
+                    data-persian="دسترسی سریع">
+                    Explore
+                </strong>
+
+                <a
+                    href="#"
+                    class="dynamic-text text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="Home"
+                    data-persian="خانه">
+                    Home
+                </a>
+
+                <a
+                    href="#"
+                    class="dynamic-text text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="About"
+                    data-persian="درباره ما">
+                    About
+                </a>
+
+                <a
+                    href="#"
+                    class="dynamic-text text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="Menu"
+                    data-persian="منو">
+                    Menu
+                </a>
+
+                <a
+                    href="#"
+                    class="dynamic-text text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="Contact"
+                    data-persian="تماس با ما">
+                    Contact
+                </a>
+
+            </div>
+
+
+            <!-- Contact -->
+            <div class="flex flex-col gap-4 cursor-default" id="st-contact">
+
+                <strong
+                    class="dynamic-text text-lg text-[#C49A44] "
+                    data-english="Visit Us"
+                    data-persian="ما را پیدا کنید">
+                    Visit Us
+                </strong>
+
+                <p
+                    class="dynamic-text text-[#AFA59A]"
+                    data-english="Ember Street"
+                    data-persian="خیابان اِمبر">
+                    Ember Street
+                </p>
+
+                <p
+                    class="dynamic-text text-[#AFA59A]"
+                    data-english="MON - SUN"
+                    data-persian="شنبه تا یکشنبه">
+                    MON - SUN
+                </p>
+
+                <p
+                    class="text-[#AFA59A]">
+                    08:00 — 23:00
+                </p>
+
+            </div>
+
+
+            <!-- Social -->
+            <div class="flex flex-col gap-4">
+
+                <strong
+                    class="dynamic-text text-lg text-[#C49A44]"
+                    data-english="Follow Us"
+                    data-persian="ما را دنبال کنید">
+                    Follow Us
+                </strong>
+
+                <a
+                    href="#"
+                    class="text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="Instagram"
+                    data-persian="اینستاگرام"
+                    >
+                    Instagram
+                </a>
+
+                <a
+                    href="#"
+                    class="text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="Facebook"
+                    data-persian="فیس‌بوک"
+                    >
+                    Facebook
+                </a>
+
+                <a
+                    href="#"
+                    class="text-[#AFA59A] hover:text-[#C49A44] transition-colors duration-300"
+                    data-english="X / Twitter"
+                    data-persian="تویتر"
+                    >
+                    X / Twitter
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- Divider -->
+        <div class="h-px w-full bg-white/10 my-16"></div>
+
+
+        <!-- Bottom -->
+        <div class="flex items-center justify-between">
+
+            <p
+                class="dynamic-text text-sm text-[#766E65]"
+                data-english="© 2026 Black Ember. All rights reserved."
+                data-persian="© ۲۰۲۶ بِلک‌اِمبر. تمامی حقوق محفوظ است.">
+                © 2026 Black Ember. All rights reserved.
+            </p>
+
+            <p
+                class="dynamic-text text-sm text-[#766E65]"
+                data-english="Crafted with passion. By Mr-mmdzp"
+                data-persian="ساخته‌شده با عشق و دقت توسط Mr-mmdzp.">
+                Crafted with passion. By Mr-mmdzp
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <!-- Giant Background Brand -->
+    <div
+        class="spec absolute left-1/2 bottom-[-80px]
+               -translate-x-1/2
+               whitespace-nowrap
+               text-[14vw]
+               font-black
+               tracking-[-0.08em]
+               text-[#C49A44]
+               opacity-[0.08]
+               blur-[6px]
+               select-none
+               pointer-events-none
+               font-['Outfit']"
+               >
+
+        BLACK EMBER
+
+    </div>
+
+</footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
