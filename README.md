@@ -2,12 +2,11 @@
 
 A modern and elegant café website built with **HTML, Tailwind CSS, and Vanilla JavaScript**.
 
-Black Ember is a dark-themed café landing page focused on a premium visual experience, smooth interactions, and dynamic content rendering.
+Black Ember is a dark-themed café landing page focused on a premium visual experience, smooth interactions, and dynamic content rendering (NO RESPONSIVE).
 
 ## ✨ Features
 
 - 🌑 Modern dark café design
-- 📱 Responsive layout
 - 🔎 Dynamic product search
 - 🛍️ Product details popup
 - 🌐 English / Persian language switch
